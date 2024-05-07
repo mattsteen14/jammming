@@ -1,5 +1,9 @@
+import React, { useState, useCallback } from 'react';
 import logo from '../../../src/logo.svg';
 import './App.css';
+import Playlist from '../Playlist/Playlist';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
 
 function App() {
   return (
