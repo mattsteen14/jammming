@@ -5,17 +5,14 @@ import Track from "../Track/Track";
 const TrackList = (props) => {
     return (
         <div className={styles.TrackList}>
-            {props.tracks.map((track) => {
+            {/* {props.tracks.map((track) => {
                 return (
-                    <Track 
-                    track={track}
-                    key={track.id}
-                    onAdd={props.onAdd}
-                    isRemoval={props.isRemoval}
-                    onRemove={props.onRemove}
+                    <Track
+                        track={track}
+                        key={track.id}
                     />
                 );
-            })}
+            })} */}
         </div>
     );
 };
