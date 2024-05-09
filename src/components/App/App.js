@@ -5,7 +5,7 @@ import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Spotify from '../../util/Spotify';
 
-function App() {
+const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [playlistName, setPlaylistName] = useState("New Playlist");
   const [playlistTracks, setPlaylistTracks] = useState([]);
@@ -35,6 +35,7 @@ function App() {
         <div className='App-playlist'>
           <SearchResults
             searchResults={searchResults}
+            onAdd={addTrack}
           />
           <Playlist
             playlistName={playlistName}
