@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import './App.css';
+import './App.module.css';
 import Playlist from '../Playlist/Playlist';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
@@ -27,7 +27,7 @@ const App = () => {
   }, [playlistName, playlistTracks]);
   return (
     <div>
-      <h1>Jammming</h1>
+      <h1>Ja<span className='highlight'>mmm</span>ing</h1>
       <div className='App'>
         <SearchBar
         onSearch={search}

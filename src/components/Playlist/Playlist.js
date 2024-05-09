@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import "./Playlist.css";
+import "./Playlist.module.css";
 import TrackList from "../TrackList/TrackList";
 
 const Playlist = (props) => {
