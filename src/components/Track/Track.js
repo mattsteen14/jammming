@@ -10,6 +10,8 @@ const Track = (props) => {
     return (
         <div className={styles.Track}>
             <div className={styles['Track-information']}>
+                <h3></h3>
+                <p></p>
             </div>
         </div>
     )
