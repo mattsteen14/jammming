@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import "./Track.css";
+import styles from "./Track.module.css";
 
 const Track = (props) => {
     const addTrack = useCallback(
@@ -12,7 +12,7 @@ const Track = (props) => {
         if (props.isRemoval) {
             return (
                 <button 
-                className="Track-action"
+                className={styles.TrackAction}
                 >
                     -
                 </button>
@@ -20,15 +20,15 @@ const Track = (props) => {
         }
         return (
             <button 
-            className="Track-action"
+            className={styles.TrackAction}
             >
                 +
             </button>
         )
     }
     return (
-        <div className="Track">
-            <div className="Track-information">
+        <div className={styles.Track}>
+            <div className={styles.TrackInformation}>
                 <h3>{props.track.name}</h3>
                 <p>
                     {props.track.artist} | {props.track.album}

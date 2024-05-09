@@ -1,5 +1,5 @@
 import React, { useCallback } from "react";
-import "./Playlist.css";
+import styles from "./Playlist.module.css";
 import TrackList from "../TrackList/TrackList";
 
 const Playlist = (props) => {
@@ -10,7 +10,7 @@ const Playlist = (props) => {
         [props.onNameChange]
     );
     return (
-        <div className="Playlist">
+        <div className={styles.Playlist}>
             <input
                 onChange={handleNameChange}
                 defaultValue={"New Playlist"}
@@ -19,7 +19,7 @@ const Playlist = (props) => {
                 tracks={props.playlistTracks}
             />
             <button 
-            className="Playlist-save"
+            className={styles.PlaylistSave}
             onClick={props.onSave}
             >
                 SAVE TO SPOTIFY
