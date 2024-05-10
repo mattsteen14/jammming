@@ -10,7 +10,9 @@ const Playlist = (props) => {
         [props.onNameChange]
     );
     return (
-        <div className={styles.Playlist}>
+        <div 
+        className={styles.Playlist}
+        >
             <input
                 onChange={handleNameChange}
                 defaultValue={"New Playlist"}

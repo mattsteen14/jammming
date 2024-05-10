@@ -63,11 +63,15 @@ const App = () => {
   return (
     <div>
       <h1>Ja<span className='highlight'>mmm</span>ing</h1>
-      <div className={styles.App}>
+      <div 
+      className={styles.App}
+      >
         <SearchBar
         onSearch={search}
         />
-        <div className={styles['App-playlist']}>
+        <div 
+        className={styles['App-playlist']}
+        >
           <SearchResults
             searchResults={searchResults}
             onAdd={addTrack}

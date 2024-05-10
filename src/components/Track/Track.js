@@ -2,13 +2,13 @@ import React, { useCallback } from "react";
 import styles from "./Track.module.css";
 
 const Track = (props) => {
-    const addTrack = useCallback(
+    const passTrack = useCallback(
         (event) => {
             props.onAdd(props.track);
         },
         [props.onAdd, props.track]
     );
-    const removeTrack = useCallback(
+    const passTrackToRemove = useCallback(
         (event) => {
             props.onRemove(props.track);
         },
@@ -17,13 +17,19 @@ const Track = (props) => {
     const renderAction = () => {
             if (props.isRemoval) {
                 return (
-                    <button className="Track-action" onClick={removeTrack}>
+                    <button 
+                    className="Track-action" 
+                    onClick={passTrackToRemove}
+                    >
                         -
                     </button>
                 )
             } else {
                 return (
-                    <button className="Track-action" onClick={addTrack}>
+                    <button 
+                    className="Track-action" 
+                    onClick={passTrack}
+                    >
                         +
                     </button>
                 )

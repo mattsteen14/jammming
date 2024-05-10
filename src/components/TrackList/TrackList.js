@@ -4,7 +4,9 @@ import Track from "../Track/Track";
 
 const TrackList = (props) => {
     return (
-        <div className={styles.TrackList}>
+        <div 
+        className={styles.TrackList}
+        >
             {props.tracks.map((track) => {
                 return (
                     <Track 

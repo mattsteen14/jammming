@@ -7,18 +7,20 @@ const SearchBar = (props) => {
     const handleTermChange = useCallback((event) => {
         setTerm(event.target.value);
     }, []);
-    const search = useCallback(() => {
+    const passTerm = useCallback(() => {
         props.onSearch(term);
     }, [props.onSearch, term]);
     return (
-        <div className={styles.SearchBar}>
+        <div 
+        className={styles.SearchBar}
+        >
             <input
             placeholder="Enter a Song, Album or Artist"
             onChange={handleTermChange}
             />
             <button
             className={styles.SearchButton}
-            onClick={search}
+            onClick={passTerm}
             >
                 SEARCH
             </button>
