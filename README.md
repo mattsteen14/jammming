@@ -283,7 +283,7 @@ Project Link: [https://github.com/mattsteen14/jammming](https://github.com/matts
 [issues-shield]: https://img.shields.io/github/issues/mattsteen14/jammming.svg?style=for-the-badge
 [issues-url]: https://github.com/mattsteen14/jammming/issues
 [license-shield]: https://img.shields.io/github/license/mattsteen14/jammming.svg?style=for-the-badge
-[license-url]: https://github.com/mattsteen14/jammming/blob/master/public/LICENSE.txt
+[license-url]: https://github.com/mattsteen14/jammming/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/mattsteen14
 [product-screenshot]: /portfolio/resources/images/PortfolioScreenshot.png
