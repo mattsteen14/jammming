@@ -212,7 +212,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create hardcoded array of uri values.
+- [ ] Codecademy 'Create a Playlist App With the Spotify API (Part Two)' task - add new feature through technical design planning.
 - [ ] Testing & Debugging.
 - [ ] Use surge to deploy.
 
