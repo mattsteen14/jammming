@@ -17,7 +17,6 @@ const SearchBar = (props) => {
             <input
             placeholder="Enter a Song, Album or Artist"
             onChange={handleTermChange}
-            ref={searchRef}
             />
             <button
             className={styles.SearchButton}
