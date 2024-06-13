@@ -4,19 +4,19 @@ import Track from "../Track/Track";
 
 const TrackList = (props) => {
     return (
-        <div 
-        className={styles.TrackList}
+        <div
+            className={styles.TrackList}
         >
             {props.tracks.map((track) => {
                 return (
-                    <Track 
+                <Track
                     track={track}
                     key={track.id}
                     onAdd={props.onAdd}
                     isRemoval={props.isRemoval}
                     onRemove={props.onRemove}
-                    />
-                );
+                />
+            );
             })}
         </div>
     );

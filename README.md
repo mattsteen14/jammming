@@ -1,23 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -25,14 +7,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
-<!-- PROJECT LOGO -->
-<!-- <br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="/portfolio/resources/images/PortfolioScreenshot.png" alt="Logo" width="80" height="80">
-  </a> -->
 
 <h3 align="center">Jammming</h3>
 
@@ -82,11 +56,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- [![Portfolio Screen Shot][product-screenshot]](https://github.com/mattsteen14/jammming) -->
-
 The project brief was to practice using an API to create an interactive React app. This Jammming app fetches data from Spotifys API in order to allow users to search for and add tracks to a custom playlist which they then can add to their Spotify account.
 
-This has been a really valuable & rewarding project. This is my first attempt at building a React app from scratch & structuring components and how they feed into each other. 
+This has been a really valuable & rewarding project. This is my first attempt at building a React app from scratch with structuring components and how they feed into each other. 
+
+The next step is Part Two - create and implement a new feature through technical design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,6 +186,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- ROADMAP -->
 ## Roadmap
 
+- [x] Issue fixed - search results not appearing.
+- [x] Issue fixed - Playlist not saving.
+- [x] Not necessary - create hardcoded array of uri values.
+- [x] Upload to Codecademy forums for feedback.
 - [ ] Codecademy 'Create a Playlist App With the Spotify API (Part Two)' task - add new feature through technical design planning.
 - [ ] Testing & Debugging.
 - [ ] Use surge to deploy.

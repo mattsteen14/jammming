@@ -6,32 +6,7 @@ import SearchResults from '../SearchResults/SearchResults';
 import Spotify from '../../util/Spotify';
 
 const App = () => {
-  const [searchResults, setSearchResults] = useState([
-    {
-      name: "Example Track Name 1",
-      artist: "Example Track Artist 1",
-      album: "Example Track Album 1",
-      id: 1,
-    },
-    {
-      name: "Example Track Name 2",
-      artist: "Example Track Artist 2",
-      album: "Example Track Album 2",
-      id: 2,
-    },
-    {
-      name: "Example Track Name 3",
-      artist: "Example Track Artist 3",
-      album: "Example Track Album 3",
-      id: 3,
-    },
-    {
-      name: "Example Track Name 4",
-      artist: "Example Track Artist 4",
-      album: "Example Track Album 4",
-      id: 4,
-    },
-  ]);
+  const [searchResults, setSearchResults] = useState([]);
   const [playlistName, setPlaylistName] = useState("New Playlist");
   const [playlistTracks, setPlaylistTracks] = useState([]);
   const search = useCallback((term) => {
@@ -47,7 +22,7 @@ const App = () => {
   const removeTrack = useCallback((track) => {
     setPlaylistTracks((prevTracks) =>
       prevTracks.filter((currentTrack) => currentTrack.id !== track.id)
-  );
+    );
   }, [])
   const updatePlaylistName = useCallback((name) => {
     setPlaylistName(name);
@@ -59,18 +34,20 @@ const App = () => {
       setPlaylistTracks([]);
     });
   }, [playlistName, playlistTracks]);
-  
+
   return (
     <div>
-      <h1>Ja<span className='highlight'>mmm</span>ing</h1>
-      <div 
-      className={styles.App}
+      <h1>
+        Ja<span className="highlight">mmm</span>ing
+      </h1>
+      <div
+        className={styles.App}
       >
         <SearchBar
-        onSearch={search}
+          onSearch={search}
         />
-        <div 
-        className={styles['App-playlist']}
+        <div
+          className={styles['App-playlist']}
         >
           <SearchResults
             searchResults={searchResults}
