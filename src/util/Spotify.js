@@ -65,7 +65,7 @@ const Spotify = {
                     headers: headers,
                     method: 'POST',
                     body: JSON.stringify({uris: trackUris})
-                });
+                }).then(() => `https://open.spotify.com/playlist/${playlistId}`); // Return the playlist URL
             });
         });
     }
