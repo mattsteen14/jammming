@@ -34,10 +34,11 @@ const App = () => {
     const trackUris = playlistTracks.map((track) => track.uri);
     Spotify.savePlaylist(playlistName, trackUris).then((url) => {
       setPlaylistUrl(url); // set the URL of the new playlist
-      setConfirmationMessage(`Your new playlist "${playlistName}" saved successfully.`); // Set the confirmation message with the playlist name
+      setConfirmationMessage(`Your new playlist saved successfully.`); // Set the confirmation message with the playlist name
       setSavedPlaylistName(playlistName); // Save the current playlist name
       setPlaylistName("New Playlist"); // Reset the playlist name
       setPlaylistTracks([]); // Clear the tracks
+      setSearchResults([]);
     });
   }, [playlistName, playlistTracks]);
 
@@ -60,7 +61,7 @@ const App = () => {
             target='_blank'
             rel='noopener noreferrer' 
             >
-              {savedPlaylistName}
+              Listen to it here - {savedPlaylistName}.
             </a>
           </div>
         )}
