@@ -44,6 +44,26 @@ h2 {
   width: 100%;
 }
 
+/* Confirmation Message */
+
+.confirmationMessage {
+  margin-top: 20px;
+  padding: 10px;
+  color: #fff;
+}
+.confirmationMessage p {
+  margin: 0;
+  font-weight: bold;
+}
+.confirmationMessage a {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+}
+.confirmationMessage a:hover {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1020px) {
   .App-playlist {
     align-items: center;

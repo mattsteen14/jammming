@@ -9,6 +9,9 @@ const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [playlistName, setPlaylistName] = useState("New Playlist");
   const [playlistTracks, setPlaylistTracks] = useState([]);
+  const [confirmationMessage, setConfirmationMessage] = useState(''); // add state to hold confirmation message
+  const [playlistUrl, setPlaylistUrl] = useState(''); // add state to hold playlist URL
+  const [savedPlaylistName, setSavedPlaylistName] = useState(''); // Add state to hold saved playlist name
   const search = useCallback((term) => {
     Spotify.search(term).then(setSearchResults);
   }, []);
@@ -29,9 +32,12 @@ const App = () => {
   }, []);
   const savePlaylist = useCallback(() => {
     const trackUris = playlistTracks.map((track) => track.uri);
-    Spotify.savePlaylist(playlistName, trackUris).then(() => {
-      setPlaylistName("New Playlist");
-      setPlaylistTracks([]);
+    Spotify.savePlaylist(playlistName, trackUris).then((url) => {
+      setPlaylistUrl(url); // set the URL of the new playlist
+      setConfirmationMessage(`Your new playlist "${playlistName}" saved successfully.`); // Set the confirmation message with the playlist name
+      setSavedPlaylistName(playlistName); // Save the current playlist name
+      setPlaylistName("New Playlist"); // Reset the playlist name
+      setPlaylistTracks([]); // Clear the tracks
     });
   }, [playlistName, playlistTracks]);
 
@@ -46,6 +52,18 @@ const App = () => {
         <SearchBar
           onSearch={search}
         />
+        {confirmationMessage && (
+          <div className={styles.confirmationMessage}>
+            <p>{confirmationMessage}</p>
+            <a 
+            href={playlistUrl} 
+            target='_blank'
+            rel='noopener noreferrer' 
+            >
+              {savedPlaylistName}
+            </a>
+          </div>
+        )}
         <div
           className={styles['App-playlist']}
         >
