@@ -68,6 +68,10 @@ For detailed information on the design and implementation of the new preview tra
 
 [Technical Design Document. Jammming Feature Request: Preview Track Samples.](https://docs.google.com/document/d/11jufOtNNae_KJI4Be5ErO6BVSl84uZnGo1EeBP8ek5E/edit?usp=sharing)
 
+For detailed information on the design and implementation of the new save playlist confirmation message with link and clear search results button features, please refer to the following document:
+
+[Technical Design Document. Jammming Feature Request: Save Playlist Confirmation Message with Clear Search Results Button.](https://docs.google.com/document/d/19rY5eR7nRyldznA0n5YBl2NSL55TufVmtHrKvs341r8/edit?usp=sharing)
+
 See the <a href="#roadmap">roadmap</a> for more planned features that were devised during the planning process for this task.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -200,8 +204,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - [x] Upload to Codecademy forums for feedback.
 - [x] Codecademy 'Create a Playlist App With the Spotify API (Part Two)' task - add new feature through technical design planning.
 - [x] Feature Request: Include preview samples for each track
-- [ ] Feature Request: Alert or message as confirmation when playlist saves.
-- [ ] Feature Request: Clear search results when playlist saves.
+- [x] Feature Request: Alert or message as confirmation when playlist saves.
+- [x] Feature Request: Clear search results when playlist saves.
 - [ ] Feature Request: Only display songs not currently in the playlist in the search results.
 - [ ] Feature Request: After user redirect on login, restoring the search term from before the redirect.
 - [ ] Feature Request: Ensure playlist information doesn’t get cleared if a user has to refresh their access token.
