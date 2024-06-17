@@ -60,7 +60,15 @@ The project brief was to practice using an API to create an interactive React ap
 
 This has been a really valuable & rewarding project. This is my first attempt at building a React app from scratch with structuring components and how they feed into each other. 
 
-The next step is Part Two - create and implement a new feature through technical design.
+## Feature Requests / Technical Design
+
+Create a Playlist App With the Spotify API (Part Two) - create and implement a new feature through technical design.
+
+For detailed information on the design and implementation of the new preview track samples feature, please refer to the following document:
+
+[Technical Design Document. Jammming Feature Request: Preview Track Samples.](https://docs.google.com/document/d/11jufOtNNae_KJI4Be5ErO6BVSl84uZnGo1EeBP8ek5E/edit?usp=sharing)
+
+See the <a href="#roadmap">roadmap</a> for more planned features that were devised during the planning process for this task.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +198,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - [x] Issue fixed - Playlist not saving.
 - [x] Not necessary - create hardcoded array of uri values.
 - [x] Upload to Codecademy forums for feedback.
-- [ ] Codecademy 'Create a Playlist App With the Spotify API (Part Two)' task - add new feature through technical design planning.
+- [x] Codecademy 'Create a Playlist App With the Spotify API (Part Two)' task - add new feature through technical design planning.
+- [x] Feature Request: Include preview samples for each track
+- [ ] Feature Request: Alert or message as confirmation when playlist saves.
+- [ ] Feature Request: Clear search results when playlist saves.
+- [ ] Feature Request: Only display songs not currently in the playlist in the search results.
+- [ ] Feature Request: After user redirect on login, restoring the search term from before the redirect.
+- [ ] Feature Request: Ensure playlist information doesn’t get cleared if a user has to refresh their access token.
+- [ ] Feature Request: Update the access token logic to expire at exactly the right time, instead of setting expiration from when the user initiates their next search
 - [ ] Testing & Debugging.
 - [ ] Use surge to deploy.
 
