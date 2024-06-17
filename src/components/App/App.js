@@ -38,10 +38,11 @@ const App = () => {
       setSavedPlaylistName(playlistName); // Save the current playlist name
       setPlaylistName("New Playlist"); // Reset the playlist name
       setPlaylistTracks([]); // Clear the tracks
-      setSearchResults([]);
     });
   }, [playlistName, playlistTracks]);
-
+  const clearSearchResults = useCallback(() => {
+    setSearchResults([]);
+  })
   return (
     <div>
       <h1>
@@ -63,6 +64,9 @@ const App = () => {
             >
               Listen to it here - {savedPlaylistName}.
             </a>
+            <button onClick={clearSearchResults}>
+              CLEAR SEARCH RESULTS
+            </button>
           </div>
         )}
         <div
