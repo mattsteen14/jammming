@@ -15,25 +15,25 @@ const Track = (props) => {
         [props.onRemove, props.track]
     );
     const renderAction = () => {
-            if (props.isRemoval) {
-                return (
-                    <button 
-                    className="Track-action" 
+        if (props.isRemoval) {
+            return (
+                <button
+                    className={styles['Track-action']}
                     onClick={passTrackToRemove}
-                    >
-                        -
-                    </button>
-                )
-            } else {
-                return (
-                    <button 
-                    className="Track-action" 
+                >
+                    -
+                </button>
+            )
+        } else {
+            return (
+                <button
+                    className={styles['Track-action']}
                     onClick={passTrack}
-                    >
-                        +
-                    </button>
-                )
-            };
+                >
+                    +
+                </button>
+            )
+        };
     }
     return (
         <div className={styles.Track}>
@@ -42,7 +42,11 @@ const Track = (props) => {
                 <p>
                     {props.track.artist} | {props.track.album}
                 </p>
-                <audio controls src={props.track.preview}></audio> {/* New Audio Tag */}
+                <audio
+                    controls
+                    src={props.track.preview}
+                >
+                </audio> {/* New Audio Tag */}
             </div>
             {renderAction()}
         </div>
