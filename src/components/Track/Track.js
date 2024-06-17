@@ -42,6 +42,7 @@ const Track = (props) => {
                 <p>
                     {props.track.artist} | {props.track.album}
                 </p>
+                <audio controls src={props.track.preview}></audio> {/* New Audio Tag */}
             </div>
             {renderAction()}
         </div>
